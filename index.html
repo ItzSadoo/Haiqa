@@ -1,82 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haiqa Beauty Parlour</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Prices - Products & Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 80%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .pricing-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .pricing-item {
+      background-color: #e2e2e2;
+      border-radius: 5px;
+      margin: 10px 0;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pricing-item h2 {
+      margin: 0;
+      color: #444;
+    }
+
+    .pricing-item p {
+      margin: 0;
+      color: #666;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #27ae60;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section (Landing Page) -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Welcome to Haiqa Beauty Parlour</h1>
-            <p>Your beauty is our passion</p>
-            <a href="prices.html" class="btn">Explore Services</a>
+  <div class="container">
+    <h1>Great Prices</h1>
+
+    <ul class="pricing-list">
+      <li class="pricing-item">
+        <div>
+          <h2>Bridal Makeup Normal</h2>
+          <p>Flawless bridal look for your big day!</p>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <img src="makeup.jpg" width="250" height="300" alt="Makeup Service">
-                <h3>Bridal Makeup</h3>
-                <p>Perfect for your special day</p>
-            </div>
-            <div class="service-card">
-                <img src="party-makeup.jpg" width="250" height="300"alt="Party Makeup">
-                <h3>Party Makeup</h3>
-                <p>Look stunning at any event</p>
-            </div>
-            <!-- Add more services as needed -->
+        <div class="price">PKR 10,000</div>
+      </li>
+	  <li class="pricing-item">
+        <div>
+          <h2>Bridal Makeup Advance</h2>
+          <p>Flawless bridal look for your big day into large day</p>
         </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop">
-        <h2>Shop Products</h2>
-        <div class="shop-container">
-            <!-- Add products here -->
+        <div class="price">PKR 20,000</div>
+      </li>
+      <li class="pricing-item">
+        <div>
+          <h2>Party Makeup</h2>
+          <p>Glam up for any occasion with our party makeup.</p>
         </div>
-    </section>
+        <div class="price">PKR 2,000</div>
+      </li>
+      <li class="pricing-item">
+        <div>
+          <h2>Haircut & Styling</h2>
+          <p>Trendy haircuts to fit your style.</p>
+        </div>
+        <div class="price">PKR 1,500</div>
+      </li>
+      <li class="pricing-item">
+        <div>
+          <h2>Facial</h2>
+          <p>Glow with our rejuvenating facials.</p>
+        </div>
+        <div class="price">PKR 1,000 - 2,000</div>
+      </li>
+      <li class="pricing-item">
+        <div>
+          <h2>Bridal Package Package</h2>
+          <p>Get the full party look + Service Also</p>
+        </div>
+        <div class="price">PKR 15,000 - 30,000</div>
+      </li>
+	   <li class="pricing-item">
+        <div>
+          <h2>Hair extenso</h2>
+          <p>Get your fluffy hair straight</p>
+        </div>
+        <div class="price">PKR Half Lenght 7,000 Full Lenght 15,000</div>
+      </li>
+    </ul>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a premium beauty parlour dedicated to providing excellent beauty services in a relaxing environment.</p>
-    <p> Number: 03422415215 
-	<p> Email: erumtanveer492@gmail.com
-	</section>
-
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Haiqa Beauty Parlour. All rights reserved.</p>
+      <p>For more details, contact us at <a href="mailto:erumtanveer492@gmail.com">erumtanveer492@gmail.com</a></p>
     </footer>
+  </div>
+
 </body>
 </html>
