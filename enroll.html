@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Haiqa Beauty Parlour Special Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 18px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enroll in Haiqa Beauty Parlour Special Course</h2>
+        <p style="text-align: center; font-size: 18px; color: #555;">Please fill out the form below to enroll in the course and receive a certificate upon completion. Course fees vary based on your selection.</p>
+
+        <form action="https://formspree.io/f/xlddkyzr" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="jazz-cash">Jazz Cash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="basic">Basic Course - 10,000 PKR</option>
+                    <option value="advanced">Advanced Course - 15,000 PKR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" value="10000" readonly>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enroll Now">
+            </div>
+        </form>
+
+        <p class="footer">By enrolling, you agree to our <a href="#">terms and conditions</a>.</p>
+    </div>
+
+    <script>
+        const courseSelect = document.getElementById('course');
+        const amountInput = document.getElementById('amount');
+
+        courseSelect.addEventListener('change', () => {
+            const selectedCourse = courseSelect.value;
+            amountInput.value = selectedCourse === 'basic' ? 10000 : 15000;
+        });
+    </script>
+
+</body>
+</html>
